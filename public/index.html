@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="/images/favicon-32x32.png">
+    <link rel='stylesheet' href='/build/tailwind.css'>
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body
+      class='flex flex-col justify-center items-center bg-primary-dark min-h-screen h-screen pt-20'>
+
+    <div
+        class='relative flex flex-col md:flex-row-reverse justify-evenly items-center bg-primary-medium rounded-md  h-full max-w-sm md:max-h-96 max-w-6xl overflow-hidden text-white font-sans gap-8 w-11/12 pb-8 md:pb-0'
+    >
+      <div class='relative h-full w-full'>
+        <img
+            class='h-full w-full rounded-t-md md:rounded-t-none md:rounded-r-md'
+            srcset='/images/image-header-desktop.jpg 540w,
+             /images/image-header-mobile.jpg 654w'
+            sizes='(max-width: 480px) 540px, 654px'
+            src='/images/image-header-desktop.jpg'
+            alt='header-background'
+        />
+        <div
+            class='absolute inset-0 bg-gradient-to-r from-primary-70 to-primary-70'></div>
+      </div>
+      <main>
+        <h1 class='text-lg font-bold px-20 text-center'>Get<span
+            class='text-primary ml-2'>insights
+    </span>
+          that
+          help your
+          business
+          grow.</h1>
+        <p
+            class='benefits'>Discover
+          the
+          benefits of data
+          analytics and make better
+          decisions regarding revenue, customer
+          experience, and overall efficiency.</p>
+
+        <section class='md:flex justify-center my-10'>
+          <article class='stat'>
+            <span class='stat-value'>10k+</span>
+            <span class='stat-description'>
+         companies
+      </span>
+          </article>
+          <article class='stat'><span class='stat-value'>
+
+    314
+    </span>
+            <span class='stat-description'>
+        templates
+      </span>
+          </article>
+          <article class='stat'><span class='stat-value'>
+
+    12m+
+    </span>
+            <span class='stat-description'>
+        queries
+      </span>
+          </article>
+        </section>
+
+
+      </main>
+
+    </div>
+    <div class='text-center text-white p-6'>
+      Challenge by <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Katherine Ebel</a>.
+    </div>
+  </body>
+</html>
